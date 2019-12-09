@@ -9,6 +9,8 @@
     <!-- Stylesheets-->
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7CLato:300,300italic,400,700,900%7CYesteryear">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
   <body>
     <!-- Page-->
@@ -21,21 +23,62 @@
             <div class="row justify-center">
                 <div class="col-12">
                     <h2>The Guide</h2>
-
 <!-- Trigger/Open The Modal -->
-<button id="myBtn">Open Modal</button>
+<button id="myBtn" class="button-default">Popup Button</button>
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
   <!-- Modal content -->
   <div class="modal-content no-pad-left no-pad-top no-pad-bottom">
       <div class="row no-pad-left">
-          <div class="col-4 col-xs-12 text-left no-pad-left no-pad-top no-pad-bottom">
-                <img src="./assets/images/vila-karon.jpg" width="200" height="auto" alt="" class="pull-left full-img">
+          <div class="col-4 col-xs-12 text-left no-pad-left no-pad-top no-pad-bottom" style="background-image: url('./assets/images/vila-karon.jpg');">
+            <img src="./assets/images/vila-karon.jpg" style="visibility: hidden;" />
           </div>
-          <div class="col-8 col-xs-12">
+          <div id="trigger-height" class="col-8 col-xs-12 text-left">
             <div class="shell">
-                    <p>Some text in the Modal..</p>
+                <div class="section-top-40">
+                        <p class="lh-32 title">Four Seasons Resort Bali
+                                <br>
+                                <span class="subtitle">
+                                        Sayan Ubud Gianyar, Ubud, Indonesia, 80361
+                                </span>
+                            </p>
+                </div>
+                <span class="rating-stars">
+                        <span class="fa fa-star checked"></span> 5 Stars
+                </span>
+                <span class="rating-vote inset-left-32">
+                    9/10 Very Good
+                </span>
+                <p class="desc">
+                        The highest quality service accompanying its extensive facilities will make you get the ultimate holiday experience. Get precious and unforgettable moment during your stay at Four Seasons Resort Bali at Sayan.
+                </p>
+                <div class="section-top-8">
+                        <button class="accordion">Hotel Policy</button>
+                        <div class="panel ">
+                          <p class="subtitle">You must present a photo ID when checking in. Your credit card is charged at the time you book. Bed type and smoking preferences are not guaranteed. Your reservation is prepaid and is guaranteed for late arrival.</p>
+                        </div>
+                </div>
+                <div class="section-top-32">
+                        <div class="row">
+                            <div class="col-6">
+                                <p class="title lh-24">
+                                    Starting from
+                                    <br>
+                                    <br>
+                                    <span class="price section-top-8">
+                                            Rp 11.623.675
+                                    </span>
+                                    
+                                </p>
+                                
+                            </div>
+                            <div class="col-6  text-center">
+                                    <button class="button-default second-color">Book Now</button>
+                            </div>
+                        </div>
+                </div>
+                
             </div>
           </div>
       </div>

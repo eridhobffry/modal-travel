@@ -42,3 +42,11 @@ for (i = 0; i < acc.length; i++) {
     } 
   });
 }
+
+// IMAGE
+var height = document.getElementById("trigger-height").height;
+document.getElementsbyId('section-image').style.width= height+"px";
+
+alert(height);
+
+console.log(divHeight)
