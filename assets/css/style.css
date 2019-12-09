@@ -234,10 +234,25 @@ p {
 		justify-content: center;
 }
 
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
+.justify-left {
+    -webkit-justify-content: left;
+		-ms-flex-pack: left;
+		justify-content: left;
+}
+
+.justify-right {
+    -webkit-justify-content: right;
+		-ms-flex-pack: right;
+		justify-content: right;
+}
+.pull-left {
+    float: left;
+}
+.pull-right {
+    float: right;
+}
+* {
+    box-sizing: border-box;
   }
   
   [class*="col-"] {
@@ -258,7 +273,12 @@ p {
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
 
-  @media (min-width: 480px) {
+  .row::after {
+    content: "";
+    clear: both;
+    display: flex !important;
+  }
+  @media (max-width: 480px) {
     .col-xs-1 {
 		-webkit-flex-basis: 8.33333%;
 		-ms-flex-preferred-size: 8.33333%;
@@ -333,7 +353,29 @@ p {
 	}
 
    }
+.no-pad-left {
+    padding-left: unset !important;
+}
+.no-pad-top {
+    padding-top: unset !important;
+}
+.no-pad-bottom {
+    padding-bottom: unset !important;
+}
 
+img {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.full-img {
+    background-image: url("/assets/images/vila-karon.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
 /* MODAL */
 
 /* The Modal (background) */
@@ -347,8 +389,8 @@ p {
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    
+    background-color: #333333; /* Black w/ opacity */
   }
   
   /* Modal Content */
@@ -356,13 +398,15 @@ p {
     background-color: #fefefe;
     margin: auto;
     padding: 20px;
-    border: 1px solid #888;
+    
     width: 80%;
+    border-radius: 7px;
   }
-  
-  /* The Close Button */
-  .close {
-    color: #aaaaaa;
+
+
+/* The Close Button */
+.close {
+    color: transparent;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -370,11 +414,11 @@ p {
   
   .close:hover,
   .close:focus {
-    color: #000;
+    color: transparent;
     text-decoration: none;
     cursor: pointer;
   }
-
+  
   /* ACCORDIION */
 
   .accordion {
