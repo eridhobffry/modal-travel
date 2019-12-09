@@ -1,0 +1,418 @@
+/* Typography imported from Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:200,400');
+
+  
+  /* Generic styles */
+  html {
+    scroll-behavior: smooth;
+  }
+
+body {
+	color: black;
+	font-family: "circular", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+	font-size: 20px;
+	text-align: center;
+	line-height: 5;
+}
+  
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: inherit;
+	font-weight: 400;
+	line-height: 1.1;
+	color: inherit;
+}
+
+h1, .h1 {
+	font-size: 45px;
+}
+
+h2, .h2 {
+	font-size: 38px;
+}
+
+h3, .h3 {
+	font-size: 30px;
+}
+
+h4, .h4 {
+	font-size: 24px;
+}
+
+h5, .h5 {
+	font-size: 22px;
+}
+
+h6, .h6 {
+	font-size: 17px;
+}
+
+p {
+	margin: 0 0 12px;
+}
+  
+  p, a {
+    font-family: "copernicus", serif;
+  }
+
+  
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-justify {
+	text-align: justify;
+}
+
+.text-nowrap {
+	white-space: nowrap;
+}
+
+.text-lowercase {
+	text-transform: lowercase;
+}
+
+.text-uppercase, .initialism {
+	text-transform: uppercase;
+}
+
+.text-capitalize {
+	text-transform: capitalize;
+}
+
+.shell,
+.shell-wide,
+.shell-fluid {
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.shell,
+.shell-wide {
+	min-width: 300px;
+	max-width: 480px;
+}
+
+@media (min-width: 768px) {
+	.shell,
+	.shell-wide {
+		max-width: 750px;
+	}
+}
+
+@media (min-width: 992px) {
+	.shell,
+	.shell-wide {
+		max-width: 970px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.shell,
+	.shell-wide {
+		max-width: 1200px;
+	}
+}
+
+@media (min-width: 1800px) {
+	.shell-wide {
+		max-width: 1800px;
+	}
+}
+
+.section-0 {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.section-20 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.section-34 {
+	padding-top: 34px;
+	padding-bottom: 34px;
+}
+
+.section-41 {
+	padding-top: 41px;
+	padding-bottom: 41px;
+}
+
+.section-50 {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.section-66 {
+	padding-top: 66px;
+	padding-bottom: 66px;
+}
+
+.section-85 {
+	padding-top: 85px;
+	padding-bottom: 85px;
+}
+
+.section-98 {
+	padding-top: 98px;
+	padding-bottom: 98px;
+}
+
+.section-110 {
+	padding-top: 110px;
+	padding-bottom: 110px;
+}
+
+.section-124 {
+	padding-top: 124px;
+	padding-bottom: 124px;
+}
+
+.section-254 {
+	padding-top: 254px;
+	padding-bottom: 254px;
+}
+
+.section-350 {
+	padding-top: 350px;
+	padding-bottom: 350px;
+}
+
+.inset-left-0 {
+	padding-left: 0;
+}
+
+.inset-left-10 {
+	padding-left: 10px;
+}
+
+.inset-left-20 {
+	padding-left: 20px;
+}
+
+.inset-left-30 {
+	padding-left: 30px;
+}
+
+.inset-left-50 {
+	padding-left: 50px;
+}
+
+.inset-left-80 {
+	padding-left: 80px;
+}
+
+.inset-left-93 {
+	padding-left: 93px;
+}
+
+.inset-left-100 {
+	padding-left: 100px;
+}
+
+.inset-left-115 {
+	padding-left: 115px;
+}
+
+.justify-center {
+    -webkit-justify-content: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+  
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+  @media (min-width: 480px) {
+    .col-xs-1 {
+		-webkit-flex-basis: 8.33333%;
+		-ms-flex-preferred-size: 8.33333%;
+		flex-basis: 8.33333%;
+		max-width: 8.33333%;
+	}
+    .col-xs-2 {
+		-webkit-flex-basis: 16.66%;
+		-ms-flex-preferred-size: 16.66%;
+		flex-basis: 16.66%;
+		max-width: 16.66%;
+	}
+    .col-xs-3 {
+		-webkit-flex-basis: 25%;
+		-ms-flex-preferred-size: 25%;
+		flex-basis: 25%;
+		max-width: 25%;
+	}
+    .col-xs-4 {
+		-webkit-flex-basis: 33.33%;
+		-ms-flex-preferred-size: 33.33%;
+		flex-basis: 33.33%;
+		max-width: 33.33%;
+	}
+    .col-xs-5 {
+		-webkit-flex-basis: 41.66%;
+		-ms-flex-preferred-size: 41.66%;
+		flex-basis: 41.66%;
+		max-width: 41.66%;
+	}
+    .col-xs-6 {
+		-webkit-flex-basis: 50%;
+		-ms-flex-preferred-size: 50%;
+		flex-basis: 50%;
+		max-width: 50%;
+	}
+    .col-xs-7 {
+		-webkit-flex-basis: 58.33%;
+		-ms-flex-preferred-size: 58.33%;
+		flex-basis: 58.33%;
+		max-width: 58.33%;
+	}
+    .col-xs-8 {
+		-webkit-flex-basis: 66.66%;
+		-ms-flex-preferred-size: 66.66%;
+		flex-basis: 66.66%;
+		max-width: 66.66%;
+	}
+    .col-xs-9 {
+		-webkit-flex-basis: 75%;
+		-ms-flex-preferred-size: 75%;
+		flex-basis: 75%;
+		max-width: 75%;
+	}
+    .col-xs-10 {
+		-webkit-flex-basis: 83.33%;
+		-ms-flex-preferred-size: 83.33%;
+		flex-basis: 83.33%;
+		max-width: 83.33%;
+	}
+    .col-xs-11 {
+		-webkit-flex-basis: 91.66%;
+		-ms-flex-preferred-size: 91.66%;
+		flex-basis: 91.66%;
+		max-width: 91.66%;
+	}
+    .col-xs-12 {
+		-webkit-flex-basis: 100%;
+		-ms-flex-preferred-size: 100%;
+		flex-basis: 100%;
+		max-width: 100%;
+	}
+
+   }
+
+/* MODAL */
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* ACCORDIION */
+
+  .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+
+
